@@ -8,6 +8,8 @@ Install:
 
 This is a very rough project for hobby/testing purposes but I will fix it up when I can. Minimal tests exist.
 
+The text matching uses `strings.Contains()` and there is no `censor` feature. 
+
 **FYI:** There's a race condition in Scorecard() and the JSON is embedded in the code (needs go-bindata asset packing). 
 
 # Acknowledgements

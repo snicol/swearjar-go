@@ -1,7 +1,6 @@
 package swearjar
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -39,7 +38,6 @@ func TestScorecard(t *testing.T) {
 	}
 
 	expectedReasons := []string{"insult"}
-	fmt.Printf("%+v - %+v\n", reasons, expectedReasons)
 	if !reflect.DeepEqual(reasons, expectedReasons) {
 		t.Error("does not match reason")
 	}

@@ -1,12 +1,13 @@
-package swearjar
+package swearjar_test
 
 import (
+	"github.com/snicol/swearjar-go"
 	"reflect"
 	"testing"
 )
 
 func TestLoadSwears(t *testing.T) {
-	swears, err := Load()
+	swears, err := swearjar.Load()
 
 	if err != nil {
 		t.Error(err)
@@ -18,7 +19,7 @@ func TestLoadSwears(t *testing.T) {
 }
 
 func TestLoadSwearsWithNonexistentFile(t *testing.T) {
-	swears, err := Load("nonexistent.json")
+	swears, err := swearjar.Load("nonexistent.json")
 
 	if err == nil {
 		t.Error(err)
@@ -30,7 +31,7 @@ func TestLoadSwearsWithNonexistentFile(t *testing.T) {
 }
 
 func TestLoadSwearsWithBadJSON(t *testing.T) {
-	swears, err := Load("swearjar_test_bad.json")
+	swears, err := swearjar.Load("swearjar_test_bad.json")
 
 	if err == nil {
 		t.Error(err)
@@ -42,7 +43,7 @@ func TestLoadSwearsWithBadJSON(t *testing.T) {
 }
 
 func TestProfane(t *testing.T) {
-	swears, err := Load()
+	swears, err := swearjar.Load()
 
 	if err != nil {
 		t.Error(err)
@@ -60,7 +61,7 @@ func TestProfane(t *testing.T) {
 }
 
 func TestScorecard(t *testing.T) {
-	swears, err := Load()
+	swears, err := swearjar.Load()
 
 	if err != nil {
 		t.Error(err)
@@ -83,7 +84,7 @@ func TestScorecard(t *testing.T) {
 }
 
 func TestScorecardNoMatch(t *testing.T) {
-	swears, err := Load()
+	swears, err := swearjar.Load()
 
 	if err != nil {
 		t.Error(err)

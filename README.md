@@ -30,7 +30,7 @@ And in your code:
 
 # Notes 
 
-There is no currently no `censor` feature like the other swearjar projects.
+There is currently no `censor` feature like the other swearjar projects.
 
 This is regex based and is not optimised in the slightest.
 

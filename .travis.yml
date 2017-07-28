@@ -1,0 +1,11 @@
+language: go
+
+branches:
+  only:
+    - master
+
+matrix:
+  include:
+    - go: 1.6.3
+    - go: 1.7.5
+    - go: 1.8

@@ -1,4 +1,4 @@
-# swearjar-go
+# swearjar-go ![build status](https://api.travis-ci.org/snicol/swearjar-go.svg?branch=master)
 
 Install:
 

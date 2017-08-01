@@ -1,4 +1,6 @@
-# swearjar-go ![build status](https://api.travis-ci.org/snicol/swearjar-go.svg?branch=master)
+# swearjar-go
+
+[<img src="https://api.travis-ci.org/snicol/swearjar-go.svg?branch=master">](https://travis-ci.org/snicol/swearjar-go) [![](https://godoc.org/github.com/snicol/swearjar-go?status.svg)](http://godoc.org/github.com/snicol/swearjar-go) [![Go Report Card](https://goreportcard.com/badge/snicol/swearjar-go)](https://goreportcard.com/report/snicol/swearjar-go) 
 
 Install:
 
